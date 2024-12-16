@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatmap and Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0078D4;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        .section {
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 2rem;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        .section h2 {
+            background-color: #0078D4;
+            color: white;
+            margin: 0;
+            padding: 1rem;
+        }
+        .heatmap {
+            overflow: auto;
+            text-align: center;
+        }
+        .heatmap iframe {
+            border: none;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #0078D4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Heatmap and Analytics Report</h1>
+</header>
+
+<div class="container">
+    <!-- Heatmap Section -->
+    <div class="section">
+        <h2>Microsoft Clarity Heatmap</h2>
+        <div class="heatmap">
+            <iframe 
+                src="https://clarity.microsoft.com/projects/view/pbqf13m3kr/heatmaps?URL=2%3B2%3Bhttps%3A%2F%2Fwowslegends.com%2Fcodebreach&date=Today&heatmapDeviceType=2&heatmapType=0&heatmapSessionId=3041306602&heatmapUserId=2675974321&heatmapPageId=1&heatmapWidth=1019&heatmapHeight=1292&heatmapURL=https%3A%2F%2Fwowslegends.com%2Fcodebreach&elementToShow=iy6dhbk6"
+                width="100%" height="600" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Report Section -->
+    <div class="section">
+        <h2>Looker Studio Report</h2>
+        <iframe 
+            src="https://lookerstudio.google.com/embed/reporting/a734f325-9402-4db0-97a5-a80462c45f7b/page/SmQZE" 
+            allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+        </iframe>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Analytics Dashboard. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
